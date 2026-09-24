@@ -19,10 +19,10 @@ export default function App() {
     
       {/* Define Routes */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Privacy" element={<Privacy />} />
         <Route path="*" element={<NotFound />} />
 
       </Routes>
