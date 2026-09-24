@@ -3,7 +3,7 @@ import './styles/global.css';
 // Import components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-// import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTop';
 
 // Import pages
 import Home from './pages/Home';
@@ -15,8 +15,9 @@ import NotFound from './pages/NotFound';
 export default function App() {
   return (
     <Router>
-    <Navbar />
-    
+    <Navbar brand="Atlas studio" />
+    <ScrollToTop/>
+    <main>
       {/* Define Routes */}
       <Routes>
         <Route path="/Home" element={<Home />} />
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
 
       </Routes>
+      </main>
       <Footer />
     </Router>
   );
