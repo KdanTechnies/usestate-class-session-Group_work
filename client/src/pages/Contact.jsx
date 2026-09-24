@@ -17,3 +17,4 @@ export default function Contact() {
     if (form.message.trim().length < 10) e.message = "Write at least 10 characters.";
     return e;
   };
+
